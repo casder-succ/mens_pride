@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Stick';
+    src: url('../fonts/Stick-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -22,7 +27,6 @@ header {
 .header-item {
     padding-top: 15px;
     margin: 0 10px;
-    cursor: pointer;
 }
 
 .header-item .item-img {
@@ -33,21 +37,160 @@ header {
 }
 
 main {
-    width: 70%;
+    width: 70vw;
     margin: 50px auto 0 auto;
     background: #ffffff;
     min-height: 50vh;
     border-radius: 10px 10px 0 0;
+    font-size: 20px;
 }
 
-.container {
+.container, #main-header {
     padding: 20px 30px;
+}
+
+.logo {
+    font-family: Stick;
+}
+
+#main-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+#main-header .logo {
+    font-size: 50px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+
+
+/* General styles */
+.sim-slider {
+    width: 100%;
+    position: relative;
+    min-height: 550px;
+    margin-bottom: 30px;
+}
+
+.sim-slider-list {
+    width: 500px%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.sim-slider-element {
+    width: 100%;
+    max-height: 500px;
+    transition: opacity 1s ease-in;
+    opacity: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;  !important;
+    height: 500px;
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+    font-size: 30px;
+    color: #ffffff;
+    width: 22px;
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+}
+
+div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+}
+
+div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+}
+
+div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+}
+
+div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+}
+
+span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sim-elem-text {
+    color: #ffffff;
+    font-size: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
 }
 
 footer {
     height: 200px;
-    width: 70%;
+    width: 70vw;
     margin: 0 auto;
     background: #111111;
     border-radius: 0 0 10px 10px;
+}
+
+.toLink {
+    user-select: none;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s linear;
+}
+
+.toLink:hover, .toLink:visited:hover {
+    color: orangered;
+}
+
+.toLink:visited {
+    color: black;
 }
