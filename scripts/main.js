@@ -1,18 +1,23 @@
 'use strict';
 
-const getUrl = (url) => {
-  document.location.href = url;
+const getUrl = (url, currUrl = '') => {
+  if (url) {
+    document.location.href = url;
+  } else {
+    document.location.href = currUrl ? 'error404.html' : 'pages/error404.html';
+  }
+
 };
 
 function Sim(sldrId) {
 
   let id = document.getElementById(sldrId);
   if(id) {
-    this.sldrRoot = id
+    this.sldrRoot = id;
   }
   else {
-    this.sldrRoot = document.querySelector('.sim-slider')
-  };
+    this.sldrRoot = document.querySelector('.sim-slider');
+  }
 
   // Carousel objects
   this.sldrList =      this.sldrRoot.querySelector('.sim-slider-list');
@@ -25,7 +30,7 @@ function Sim(sldrId) {
   // Initialization
   this.options = Sim.defaults;
   Sim.initialize(this)
-};
+}
 
 Sim.defaults = {
 
