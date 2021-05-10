@@ -298,6 +298,15 @@ footer .logo {
     width: 65%;
 }
 
+.news-list {
+    margin: 20px 0;
+    padding-left: 70px;
+}
+
+.news-list-item {
+    list-style-type: disc;
+}
+
 .toLink {
     user-select: none;
     color: #000000;
