@@ -115,7 +115,7 @@ nav ul li {
 
 img {
     display: block;
-    width: 100%;  !important;
+    width: 100% !important;
     height: 500px;
 }
 
@@ -326,6 +326,34 @@ footer .logo {
     font-style: italic;
     margin: 0 auto;
     padding: 50px 0;
+}
+
+main.login-main {
+    border-radius: 15px;
+}
+
+button {
+    border-radius: 15px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 30px;
+
+}
+
+.login {
+    padding: 100px 0;
+    font-size: 15px;
+}
+
+.login-menu > div {
+    margin: 20px 0;
+}
+
+.login-menu {
+    width: 40%;
+    margin: 0 auto;
 }
 
 .toLink:hover, .toLink:visited:hover {
