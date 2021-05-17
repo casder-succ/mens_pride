@@ -87,22 +87,21 @@ nav ul li {
 
 
 
-/* General styles */
-.sim-slider {
+.slider {
     width: 100%;
     position: relative;
     min-height: 550px;
     margin-bottom: 30px;
 }
 
-.sim-slider-list {
+.slider-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
     position: relative;
 }
 
-.sim-slider-element {
+.slider-element {
     width: 100%;
     max-height: 500px;
     transition: opacity 1s ease-in;
@@ -119,40 +118,40 @@ img {
     height: 500px;
 }
 
-/* Navigation item styles */
-div.sim-slider-arrow-left,
-div.sim-slider-arrow-right {
+
+div.slider-arrow-left,
+div.slider-arrow-right {
     font-size: 30px;
     color: #ffffff;
     width: 22px;
     height: 70px;
     position: absolute;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.8;
     z-index: 4;
 }
 
-div.sim-slider-arrow-left {
+div.slider-arrow-left {
     left: 10px;
     top: 40%;
     display: block;
 }
 
-div.sim-slider-arrow-right {
+div.slider-arrow-right {
     right: 10px;
     top: 40%;
     display: block;
 }
 
-div.sim-slider-arrow-left:hover {
+div.slider-arrow-left:hover {
     opacity: 1.0;
 }
 
-div.sim-slider-arrow-right:hover {
+div.slider-arrow-right:hover {
     opacity: 1.0;
 }
 
-div.sim-slider-dots {
+div.slider-dots {
     width: 100%;
     height: auto;
     position: absolute;
@@ -162,7 +161,7 @@ div.sim-slider-dots {
     text-align: center;
 }
 
-span.sim-dot {
+span.dot {
     width: 10px;
     height: 10px;
     margin: 5px 7px;
@@ -173,7 +172,7 @@ span.sim-dot {
     cursor: pointer;
 }
 
-.sim-elem-text {
+.elem-text {
     color: #ffffff;
     font-size: 70px;
     position: absolute;
